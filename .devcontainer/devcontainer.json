@@ -1,11 +1,10 @@
 {
   "name": "ga2-03dfcf",
-  "features": {
-    "ghcr.io/devcontainers/features/python:1": {}
-  },
+  "image": "ghcr.io/devcontainers/features/python:1",
+  "features": {},
   "extensions": [
     "astral-sh.uv",
     "ms-python.python"
   ],
-  "postCreateCommand": "python3 -m venv .venv && . .venv/bin/activate && pip install fastapi"
+  "postCreateCommand": "uv pip install fastapi"
 }
